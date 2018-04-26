@@ -25,12 +25,12 @@ class FiguresController < ApplicationController
       FigureTitle.create(title_id: @title.id, figure_id: @figure.id)
     end
     #binding.pry
-    params[:figure]["title_ids"].each do |id|
-      FigureTitle.create(title_id: id, figure_id: @figure.id)
-    end
-    params[:figure]["landmark_ids"].each do |id|
-      Landmark.find(id).figure=@figure
-    end
+    #params[:figure]["title_ids"].each do |id|
+    #  FigureTitle.create(title_id: id, figure_id: @figure.id)
+    #end
+  #  params[:figure]["landmark_ids"].each do |id|
+  #    Landmark.find(id).figure=@figure
+  #  end
 
     #@figure.titles=params[:figure][:title_ids]
     #@figure.landmarks=params[:figure][:landmark_ids]
