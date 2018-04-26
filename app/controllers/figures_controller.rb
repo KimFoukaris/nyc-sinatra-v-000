@@ -19,7 +19,7 @@ class FiguresController < ApplicationController
     if params[:landmark]["name"] != ""
       @landmark=Landmark.create(params[:landmark])
       #@landmark.figure=@figure
-      #binding.pry
+      binding.pry
     end
     if params[:title]["name"] != ""
       @title=Title.create(params[:title])
